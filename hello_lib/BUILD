@@ -4,7 +4,7 @@ load("@rules_rust//rust:defs.bzl", "rust_library", "rust_test")
 
 rust_library(
     name = "hello_lib",
-    srcs = ["src/lib.rs"],
+    srcs = ["src/lib.rs", "src/advanced_greeter.rs"],
     deps = [
         "@crate_index//:itertools",
     ],

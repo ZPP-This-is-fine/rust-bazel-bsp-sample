@@ -1,5 +1,5 @@
 {
-  "checksum": "b67459197f35f8ae44785b937f1bc14ca9554e07668d9210c2e519396aa49ebf",
+  "checksum": "16f1b97094ef35bef8a85a33fdf7c91f11fa733ab0c572d2932bff47f93fb21f",
   "crates": {
     "direct-cargo-bazel-deps 0.0.1": {
       "name": "direct-cargo-bazel-deps",
@@ -10,12 +10,9 @@
           "Library": {
             "crate_name": "direct_cargo_bazel_deps",
             "crate_root": ".direct_cargo_bazel_deps.rs",
-            "srcs": {
-              "include": [
-                "**/*.rs"
-              ],
-              "exclude": []
-            }
+            "srcs": [
+              "**/*.rs"
+            ]
           }
         }
       ],
@@ -52,12 +49,9 @@
           "Library": {
             "crate_name": "either",
             "crate_root": "src/lib.rs",
-            "srcs": {
-              "include": [
-                "**/*.rs"
-              ],
-              "exclude": []
-            }
+            "srcs": [
+              "**/*.rs"
+            ]
           }
         }
       ],
@@ -66,9 +60,12 @@
         "compile_data_glob": [
           "**"
         ],
-        "crate_features": [
-          "use_std"
-        ],
+        "crate_features": {
+          "common": [
+            "use_std"
+          ],
+          "selects": {}
+        },
         "edition": "2018",
         "version": "1.8.0"
       },
@@ -88,12 +85,9 @@
           "Library": {
             "crate_name": "itertools",
             "crate_root": "src/lib.rs",
-            "srcs": {
-              "include": [
-                "**/*.rs"
-              ],
-              "exclude": []
-            }
+            "srcs": [
+              "**/*.rs"
+            ]
           }
         }
       ],
@@ -102,11 +96,14 @@
         "compile_data_glob": [
           "**"
         ],
-        "crate_features": [
-          "default",
-          "use_alloc",
-          "use_std"
-        ],
+        "crate_features": {
+          "common": [
+            "default",
+            "use_alloc",
+            "use_std"
+          ],
+          "selects": {}
+        },
         "deps": {
           "common": [
             {
