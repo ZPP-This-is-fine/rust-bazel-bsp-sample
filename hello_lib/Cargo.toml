@@ -4,5 +4,9 @@ version = "0.1.0"
 rust-version = "1.66.1"
 edition = "2018"
 
+[lib]
+name = "hello_lib"
+path = "src/lib.rs"
+
 [dependencies]
 itertools = "0.10"
