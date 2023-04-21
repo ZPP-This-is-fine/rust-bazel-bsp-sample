@@ -10,3 +10,4 @@ path = "src/main.rs"
 
 [dependencies]
 hello_lib = { path = "../hello_lib" }
+hello_macro = { path = "../hello_macro" }
