@@ -1,3 +1,6 @@
 .idea
 bazel-*
 .bsp
+.bazelbsp
+target/
+rust-project.json
