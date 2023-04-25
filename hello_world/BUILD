@@ -5,6 +5,7 @@ rust_binary(
     srcs = ["src/main.rs"],
     deps = [
         "//hello_lib",
+        "@crate_index//:clap",
     ],
     proc_macro_deps = [
         "//hello_macro",
