@@ -23,9 +23,6 @@ crates_repository(
     cargo_lockfile = "//:Cargo.lock",
     lockfile = "//:Cargo.Bazel.lock",
     packages = {
-        "itertools": crate.spec(
-            version = "0.10",
-        ),
         "clap": crate.spec(
             version = "4.2.4",
             features = ["derive"],

@@ -1,5 +1,5 @@
 {
-  "checksum": "c7baa452fa91f31872454cdb36a1beb00f3a2ae741c9fed0a73bca69bf2306a3",
+  "checksum": "1434a023eb84083c14412e8fa029c8692727b62ce48d4cd12682f4fbfa5a236c",
   "crates": {
     "anstream 0.3.1": {
       "name": "anstream",
@@ -584,10 +584,6 @@
             {
               "id": "clap 4.2.4",
               "target": "clap"
-            },
-            {
-              "id": "itertools 0.10.5",
-              "target": "itertools"
             }
           ],
           "selects": {}
@@ -596,42 +592,6 @@
         "version": "0.0.1"
       },
       "license": null
-    },
-    "either 1.8.1": {
-      "name": "either",
-      "version": "1.8.1",
-      "repository": {
-        "Http": {
-          "url": "https://crates.io/api/v1/crates/either/1.8.1/download",
-          "sha256": "7fcaabb2fef8c910e7f4c7ce9f67a1283a1715879a7c230ca9d6d1ae31f16d91"
-        }
-      },
-      "targets": [
-        {
-          "Library": {
-            "crate_name": "either",
-            "crate_root": "src/lib.rs",
-            "srcs": [
-              "**/*.rs"
-            ]
-          }
-        }
-      ],
-      "library_target_name": "either",
-      "common_attrs": {
-        "compile_data_glob": [
-          "**"
-        ],
-        "crate_features": {
-          "common": [
-            "use_std"
-          ],
-          "selects": {}
-        },
-        "edition": "2018",
-        "version": "1.8.1"
-      },
-      "license": "MIT OR Apache-2.0"
     },
     "errno 0.3.1": {
       "name": "errno",
@@ -947,7 +907,7 @@
           "selects": {
             "cfg(not(any(windows, target_os = \"hermit\", target_os = \"unknown\")))": [
               {
-                "id": "rustix 0.37.14",
+                "id": "rustix 0.37.15",
                 "target": "rustix"
               }
             ],
@@ -969,53 +929,6 @@
         "version": "0.4.7"
       },
       "license": "MIT"
-    },
-    "itertools 0.10.5": {
-      "name": "itertools",
-      "version": "0.10.5",
-      "repository": {
-        "Http": {
-          "url": "https://crates.io/api/v1/crates/itertools/0.10.5/download",
-          "sha256": "b0fd2260e829bddf4cb6ea802289de2f86d6a7a690192fbe91b3f46e0f2c8473"
-        }
-      },
-      "targets": [
-        {
-          "Library": {
-            "crate_name": "itertools",
-            "crate_root": "src/lib.rs",
-            "srcs": [
-              "**/*.rs"
-            ]
-          }
-        }
-      ],
-      "library_target_name": "itertools",
-      "common_attrs": {
-        "compile_data_glob": [
-          "**"
-        ],
-        "crate_features": {
-          "common": [
-            "default",
-            "use_alloc",
-            "use_std"
-          ],
-          "selects": {}
-        },
-        "deps": {
-          "common": [
-            {
-              "id": "either 1.8.1",
-              "target": "either"
-            }
-          ],
-          "selects": {}
-        },
-        "edition": "2018",
-        "version": "0.10.5"
-      },
-      "license": "MIT/Apache-2.0"
     },
     "libc 0.2.142": {
       "name": "libc",
@@ -1078,13 +991,13 @@
       },
       "license": "MIT OR Apache-2.0"
     },
-    "linux-raw-sys 0.3.4": {
+    "linux-raw-sys 0.3.5": {
       "name": "linux-raw-sys",
-      "version": "0.3.4",
+      "version": "0.3.5",
       "repository": {
         "Http": {
-          "url": "https://crates.io/api/v1/crates/linux-raw-sys/0.3.4/download",
-          "sha256": "36eb31c1778188ae1e64398743890d0877fef36d11521ac60406b42016e8c2cf"
+          "url": "https://crates.io/api/v1/crates/linux-raw-sys/0.3.5/download",
+          "sha256": "2e8776872cdc2f073ccaab02e336fa321328c1e02646ebcb9d2108d0baab480d"
         }
       },
       "targets": [
@@ -1113,7 +1026,7 @@
           "selects": {}
         },
         "edition": "2018",
-        "version": "0.3.4"
+        "version": "0.3.5"
       },
       "license": "Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT"
     },
@@ -1284,13 +1197,13 @@
       },
       "license": "MIT OR Apache-2.0"
     },
-    "rustix 0.37.14": {
+    "rustix 0.37.15": {
       "name": "rustix",
-      "version": "0.37.14",
+      "version": "0.37.15",
       "repository": {
         "Http": {
-          "url": "https://crates.io/api/v1/crates/rustix/0.37.14/download",
-          "sha256": "d9b864d3c18a5785a05953adeed93e2dca37ed30f18e69bba9f30079d51f363f"
+          "url": "https://crates.io/api/v1/crates/rustix/0.37.15/download",
+          "sha256": "a0661814f891c57c930a610266415528da53c4933e6dea5fb350cbfe048a9ece"
         }
       },
       "targets": [
@@ -1340,14 +1253,14 @@
               "target": "io_lifetimes"
             },
             {
-              "id": "rustix 0.37.14",
+              "id": "rustix 0.37.15",
               "target": "build_script_build"
             }
           ],
           "selects": {
             "cfg(all(any(target_os = \"android\", target_os = \"linux\"), any(rustix_use_libc, miri, not(all(target_os = \"linux\", any(target_arch = \"x86\", all(target_arch = \"x86_64\", target_pointer_width = \"64\"), all(target_endian = \"little\", any(target_arch = \"arm\", all(target_arch = \"aarch64\", target_pointer_width = \"64\"), target_arch = \"powerpc64\", target_arch = \"riscv64\", target_arch = \"mips\", target_arch = \"mips64\"))))))))": [
               {
-                "id": "linux-raw-sys 0.3.4",
+                "id": "linux-raw-sys 0.3.5",
                 "target": "linux_raw_sys"
               }
             ],
@@ -1357,11 +1270,11 @@
                 "target": "libc"
               },
               {
-                "id": "linux-raw-sys 0.3.4",
+                "id": "linux-raw-sys 0.3.5",
                 "target": "linux_raw_sys"
               }
             ],
-            "cfg(any(rustix_use_libc, miri, not(all(target_os = \"linux\", any(target_arch = \"x86\", all(target_arch = \"x86_64\", target_pointer_width = \"64\"), all(target_endian = \"little\", any(target_arch = \"arm\", all(target_arch = \"aarch64\", target_pointer_width = \"64\"), target_arch = \"powerpc64\", target_arch = \"riscv64\", target_arch = \"mips\", target_arch = \"mips64\")))))))": [
+            "cfg(all(not(windows), any(rustix_use_libc, miri, not(all(target_os = \"linux\", any(target_arch = \"x86\", all(target_arch = \"x86_64\", target_pointer_width = \"64\"), all(target_endian = \"little\", any(target_arch = \"arm\", all(target_arch = \"aarch64\", target_pointer_width = \"64\"), target_arch = \"powerpc64\", target_arch = \"riscv64\", target_arch = \"mips\", target_arch = \"mips64\"))))))))": [
               {
                 "id": "errno 0.3.1",
                 "target": "errno",
@@ -1374,6 +1287,11 @@
             ],
             "cfg(windows)": [
               {
+                "id": "errno 0.3.1",
+                "target": "errno",
+                "alias": "libc_errno"
+              },
+              {
                 "id": "windows-sys 0.48.0",
                 "target": "windows_sys"
               }
@@ -1381,7 +1299,7 @@
           }
         },
         "edition": "2018",
-        "version": "0.37.14"
+        "version": "0.37.15"
       },
       "build_script_attrs": {
         "data_glob": [
@@ -2075,6 +1993,28 @@
       "i686-unknown-linux-gnu",
       "x86_64-unknown-linux-gnu"
     ],
+    "cfg(all(not(windows), any(rustix_use_libc, miri, not(all(target_os = \"linux\", any(target_arch = \"x86\", all(target_arch = \"x86_64\", target_pointer_width = \"64\"), all(target_endian = \"little\", any(target_arch = \"arm\", all(target_arch = \"aarch64\", target_pointer_width = \"64\"), target_arch = \"powerpc64\", target_arch = \"riscv64\", target_arch = \"mips\", target_arch = \"mips64\"))))))))": [
+      "aarch64-apple-darwin",
+      "aarch64-apple-ios",
+      "aarch64-apple-ios-sim",
+      "aarch64-fuchsia",
+      "aarch64-linux-android",
+      "armv7-linux-androideabi",
+      "i686-apple-darwin",
+      "i686-linux-android",
+      "i686-unknown-freebsd",
+      "powerpc-unknown-linux-gnu",
+      "riscv32imc-unknown-none-elf",
+      "riscv64gc-unknown-none-elf",
+      "s390x-unknown-linux-gnu",
+      "wasm32-unknown-unknown",
+      "wasm32-wasi",
+      "x86_64-apple-darwin",
+      "x86_64-apple-ios",
+      "x86_64-fuchsia",
+      "x86_64-linux-android",
+      "x86_64-unknown-freebsd"
+    ],
     "cfg(all(target_arch = \"aarch64\", target_env = \"gnu\", target_abi = \"llvm\", not(windows_raw_dylib)))": [],
     "cfg(all(target_arch = \"aarch64\", target_env = \"msvc\", not(windows_raw_dylib)))": [
       "aarch64-pc-windows-msvc"
@@ -2091,31 +2031,6 @@
     "cfg(all(target_arch = \"x86_64\", target_env = \"gnu\", target_abi = \"llvm\", not(windows_raw_dylib)))": [],
     "cfg(all(target_arch = \"x86_64\", target_env = \"msvc\", not(windows_raw_dylib)))": [
       "x86_64-pc-windows-msvc"
-    ],
-    "cfg(any(rustix_use_libc, miri, not(all(target_os = \"linux\", any(target_arch = \"x86\", all(target_arch = \"x86_64\", target_pointer_width = \"64\"), all(target_endian = \"little\", any(target_arch = \"arm\", all(target_arch = \"aarch64\", target_pointer_width = \"64\"), target_arch = \"powerpc64\", target_arch = \"riscv64\", target_arch = \"mips\", target_arch = \"mips64\")))))))": [
-      "aarch64-apple-darwin",
-      "aarch64-apple-ios",
-      "aarch64-apple-ios-sim",
-      "aarch64-fuchsia",
-      "aarch64-linux-android",
-      "aarch64-pc-windows-msvc",
-      "armv7-linux-androideabi",
-      "i686-apple-darwin",
-      "i686-linux-android",
-      "i686-pc-windows-msvc",
-      "i686-unknown-freebsd",
-      "powerpc-unknown-linux-gnu",
-      "riscv32imc-unknown-none-elf",
-      "riscv64gc-unknown-none-elf",
-      "s390x-unknown-linux-gnu",
-      "wasm32-unknown-unknown",
-      "wasm32-wasi",
-      "x86_64-apple-darwin",
-      "x86_64-apple-ios",
-      "x86_64-fuchsia",
-      "x86_64-linux-android",
-      "x86_64-pc-windows-msvc",
-      "x86_64-unknown-freebsd"
     ],
     "cfg(not(any(windows, target_os = \"hermit\", target_os = \"unknown\")))": [
       "aarch64-apple-darwin",
