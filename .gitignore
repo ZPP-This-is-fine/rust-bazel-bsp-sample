@@ -1,6 +1,6 @@
-.idea
+.idea/
 bazel-*
-.bsp
-.bazelbsp
+.bsp/
+.bazelbsp/
 target/
 rust-project.json

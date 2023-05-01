@@ -1,7 +1,7 @@
 use hello_macro::AnswerFn;
 
-use clap::Parser;
 use clap::builder::TypedValueParser;
+use clap::Parser;
 
 #[derive(AnswerFn)]
 struct Struct;

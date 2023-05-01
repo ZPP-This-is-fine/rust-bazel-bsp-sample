@@ -19,6 +19,9 @@ mod tests {
 
     #[test]
     fn new() {
-        assert_eq!(AdvancedGreeter::new("lol".to_string(), 2137), AdvancedGreeter("lol".to_string(), 2137))
+        assert_eq!(
+            AdvancedGreeter::new("lol".to_string(), 2137),
+            AdvancedGreeter("lol".to_string(), 2137)
+        )
     }
 }
