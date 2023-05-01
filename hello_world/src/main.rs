@@ -4,6 +4,7 @@ use clap::builder::TypedValueParser;
 use clap::Parser;
 
 #[derive(AnswerFn)]
+#[allow(dead_code)]
 struct Struct;
 
 #[derive(Parser, Debug)]
