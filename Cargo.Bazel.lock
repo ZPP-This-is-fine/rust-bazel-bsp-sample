@@ -1,13 +1,13 @@
 {
-  "checksum": "c7baa452fa91f31872454cdb36a1beb00f3a2ae741c9fed0a73bca69bf2306a3",
+  "checksum": "75a5be3a6e07646abab7b30d813809d9ec072fa727e80f213d395ee2bd7dd474",
   "crates": {
-    "anstream 0.3.1": {
+    "anstream 0.3.2": {
       "name": "anstream",
-      "version": "0.3.1",
+      "version": "0.3.2",
       "repository": {
         "Http": {
-          "url": "https://crates.io/api/v1/crates/anstream/0.3.1/download",
-          "sha256": "6342bd4f5a1205d7f41e94a41a901f5647c938cdfa96036338e8533c9d6c2450"
+          "url": "https://crates.io/api/v1/crates/anstream/0.3.2/download",
+          "sha256": "0ca84f3628370c59db74ee214b3263d58f9aadd9b4fe7e711fd87dc452b7f163"
         }
       },
       "targets": [
@@ -71,7 +71,7 @@
           }
         },
         "edition": "2021",
-        "version": "0.3.1"
+        "version": "0.3.2"
       },
       "license": "MIT OR Apache-2.0"
     },
@@ -311,13 +311,13 @@
       },
       "license": "MIT OR Apache-2.0"
     },
-    "clap 4.2.4": {
+    "clap 4.2.7": {
       "name": "clap",
-      "version": "4.2.4",
+      "version": "4.2.7",
       "repository": {
         "Http": {
-          "url": "https://crates.io/api/v1/crates/clap/4.2.4/download",
-          "sha256": "956ac1f6381d8d82ab4684768f89c0ea3afe66925ceadb4eeb3fc452ffc55d62"
+          "url": "https://crates.io/api/v1/crates/clap/4.2.7/download",
+          "sha256": "34d21f9bf1b425d2968943631ec91202fe5e837264063503708b83013f8fc938"
         }
       },
       "targets": [
@@ -352,7 +352,7 @@
         "deps": {
           "common": [
             {
-              "id": "clap_builder 4.2.4",
+              "id": "clap_builder 4.2.7",
               "target": "clap_builder"
             },
             {
@@ -372,17 +372,17 @@
           ],
           "selects": {}
         },
-        "version": "4.2.4"
+        "version": "4.2.7"
       },
       "license": "MIT OR Apache-2.0"
     },
-    "clap_builder 4.2.4": {
+    "clap_builder 4.2.7": {
       "name": "clap_builder",
-      "version": "4.2.4",
+      "version": "4.2.7",
       "repository": {
         "Http": {
-          "url": "https://crates.io/api/v1/crates/clap_builder/4.2.4/download",
-          "sha256": "84080e799e54cff944f4b4a4b0e71630b0e0443b25b985175c7dddc1a859b749"
+          "url": "https://crates.io/api/v1/crates/clap_builder/4.2.7/download",
+          "sha256": "914c8c79fb560f238ef6429439a30023c862f7a28e688c58f7203f12b29970bd"
         }
       },
       "targets": [
@@ -415,7 +415,7 @@
         "deps": {
           "common": [
             {
-              "id": "anstream 0.3.1",
+              "id": "anstream 0.3.2",
               "target": "anstream"
             },
             {
@@ -438,7 +438,7 @@
           "selects": {}
         },
         "edition": "2021",
-        "version": "4.2.4"
+        "version": "4.2.7"
       },
       "license": "MIT OR Apache-2.0"
     },
@@ -582,7 +582,7 @@
         "deps": {
           "common": [
             {
-              "id": "clap 4.2.4",
+              "id": "clap 4.2.7",
               "target": "clap"
             },
             {
@@ -947,7 +947,7 @@
           "selects": {
             "cfg(not(any(windows, target_os = \"hermit\", target_os = \"unknown\")))": [
               {
-                "id": "rustix 0.37.14",
+                "id": "rustix 0.37.19",
                 "target": "rustix"
               }
             ],
@@ -1078,13 +1078,13 @@
       },
       "license": "MIT OR Apache-2.0"
     },
-    "linux-raw-sys 0.3.4": {
+    "linux-raw-sys 0.3.7": {
       "name": "linux-raw-sys",
-      "version": "0.3.4",
+      "version": "0.3.7",
       "repository": {
         "Http": {
-          "url": "https://crates.io/api/v1/crates/linux-raw-sys/0.3.4/download",
-          "sha256": "36eb31c1778188ae1e64398743890d0877fef36d11521ac60406b42016e8c2cf"
+          "url": "https://crates.io/api/v1/crates/linux-raw-sys/0.3.7/download",
+          "sha256": "ece97ea872ece730aed82664c424eb4c8291e1ff2480247ccf7409044bc6479f"
         }
       },
       "targets": [
@@ -1113,7 +1113,7 @@
           "selects": {}
         },
         "edition": "2018",
-        "version": "0.3.4"
+        "version": "0.3.7"
       },
       "license": "Apache-2.0 WITH LLVM-exception OR Apache-2.0 OR MIT"
     },
@@ -1284,13 +1284,13 @@
       },
       "license": "MIT OR Apache-2.0"
     },
-    "rustix 0.37.14": {
+    "rustix 0.37.19": {
       "name": "rustix",
-      "version": "0.37.14",
+      "version": "0.37.19",
       "repository": {
         "Http": {
-          "url": "https://crates.io/api/v1/crates/rustix/0.37.14/download",
-          "sha256": "d9b864d3c18a5785a05953adeed93e2dca37ed30f18e69bba9f30079d51f363f"
+          "url": "https://crates.io/api/v1/crates/rustix/0.37.19/download",
+          "sha256": "acf8729d8542766f1b2cf77eb034d52f40d375bb8b615d0b147089946e16613d"
         }
       },
       "targets": [
@@ -1340,14 +1340,14 @@
               "target": "io_lifetimes"
             },
             {
-              "id": "rustix 0.37.14",
+              "id": "rustix 0.37.19",
               "target": "build_script_build"
             }
           ],
           "selects": {
             "cfg(all(any(target_os = \"android\", target_os = \"linux\"), any(rustix_use_libc, miri, not(all(target_os = \"linux\", any(target_arch = \"x86\", all(target_arch = \"x86_64\", target_pointer_width = \"64\"), all(target_endian = \"little\", any(target_arch = \"arm\", all(target_arch = \"aarch64\", target_pointer_width = \"64\"), target_arch = \"powerpc64\", target_arch = \"riscv64\", target_arch = \"mips\", target_arch = \"mips64\"))))))))": [
               {
-                "id": "linux-raw-sys 0.3.4",
+                "id": "linux-raw-sys 0.3.7",
                 "target": "linux_raw_sys"
               }
             ],
@@ -1357,11 +1357,11 @@
                 "target": "libc"
               },
               {
-                "id": "linux-raw-sys 0.3.4",
+                "id": "linux-raw-sys 0.3.7",
                 "target": "linux_raw_sys"
               }
             ],
-            "cfg(any(rustix_use_libc, miri, not(all(target_os = \"linux\", any(target_arch = \"x86\", all(target_arch = \"x86_64\", target_pointer_width = \"64\"), all(target_endian = \"little\", any(target_arch = \"arm\", all(target_arch = \"aarch64\", target_pointer_width = \"64\"), target_arch = \"powerpc64\", target_arch = \"riscv64\", target_arch = \"mips\", target_arch = \"mips64\")))))))": [
+            "cfg(all(not(windows), any(rustix_use_libc, miri, not(all(target_os = \"linux\", any(target_arch = \"x86\", all(target_arch = \"x86_64\", target_pointer_width = \"64\"), all(target_endian = \"little\", any(target_arch = \"arm\", all(target_arch = \"aarch64\", target_pointer_width = \"64\"), target_arch = \"powerpc64\", target_arch = \"riscv64\", target_arch = \"mips\", target_arch = \"mips64\"))))))))": [
               {
                 "id": "errno 0.3.1",
                 "target": "errno",
@@ -1374,6 +1374,11 @@
             ],
             "cfg(windows)": [
               {
+                "id": "errno 0.3.1",
+                "target": "errno",
+                "alias": "libc_errno"
+              },
+              {
                 "id": "windows-sys 0.48.0",
                 "target": "windows_sys"
               }
@@ -1381,7 +1386,7 @@
           }
         },
         "edition": "2018",
-        "version": "0.37.14"
+        "version": "0.37.19"
       },
       "build_script_attrs": {
         "data_glob": [
@@ -2075,6 +2080,28 @@
       "i686-unknown-linux-gnu",
       "x86_64-unknown-linux-gnu"
     ],
+    "cfg(all(not(windows), any(rustix_use_libc, miri, not(all(target_os = \"linux\", any(target_arch = \"x86\", all(target_arch = \"x86_64\", target_pointer_width = \"64\"), all(target_endian = \"little\", any(target_arch = \"arm\", all(target_arch = \"aarch64\", target_pointer_width = \"64\"), target_arch = \"powerpc64\", target_arch = \"riscv64\", target_arch = \"mips\", target_arch = \"mips64\"))))))))": [
+      "aarch64-apple-darwin",
+      "aarch64-apple-ios",
+      "aarch64-apple-ios-sim",
+      "aarch64-fuchsia",
+      "aarch64-linux-android",
+      "armv7-linux-androideabi",
+      "i686-apple-darwin",
+      "i686-linux-android",
+      "i686-unknown-freebsd",
+      "powerpc-unknown-linux-gnu",
+      "riscv32imc-unknown-none-elf",
+      "riscv64gc-unknown-none-elf",
+      "s390x-unknown-linux-gnu",
+      "wasm32-unknown-unknown",
+      "wasm32-wasi",
+      "x86_64-apple-darwin",
+      "x86_64-apple-ios",
+      "x86_64-fuchsia",
+      "x86_64-linux-android",
+      "x86_64-unknown-freebsd"
+    ],
     "cfg(all(target_arch = \"aarch64\", target_env = \"gnu\", target_abi = \"llvm\", not(windows_raw_dylib)))": [],
     "cfg(all(target_arch = \"aarch64\", target_env = \"msvc\", not(windows_raw_dylib)))": [
       "aarch64-pc-windows-msvc"
@@ -2091,31 +2118,6 @@
     "cfg(all(target_arch = \"x86_64\", target_env = \"gnu\", target_abi = \"llvm\", not(windows_raw_dylib)))": [],
     "cfg(all(target_arch = \"x86_64\", target_env = \"msvc\", not(windows_raw_dylib)))": [
       "x86_64-pc-windows-msvc"
-    ],
-    "cfg(any(rustix_use_libc, miri, not(all(target_os = \"linux\", any(target_arch = \"x86\", all(target_arch = \"x86_64\", target_pointer_width = \"64\"), all(target_endian = \"little\", any(target_arch = \"arm\", all(target_arch = \"aarch64\", target_pointer_width = \"64\"), target_arch = \"powerpc64\", target_arch = \"riscv64\", target_arch = \"mips\", target_arch = \"mips64\")))))))": [
-      "aarch64-apple-darwin",
-      "aarch64-apple-ios",
-      "aarch64-apple-ios-sim",
-      "aarch64-fuchsia",
-      "aarch64-linux-android",
-      "aarch64-pc-windows-msvc",
-      "armv7-linux-androideabi",
-      "i686-apple-darwin",
-      "i686-linux-android",
-      "i686-pc-windows-msvc",
-      "i686-unknown-freebsd",
-      "powerpc-unknown-linux-gnu",
-      "riscv32imc-unknown-none-elf",
-      "riscv64gc-unknown-none-elf",
-      "s390x-unknown-linux-gnu",
-      "wasm32-unknown-unknown",
-      "wasm32-wasi",
-      "x86_64-apple-darwin",
-      "x86_64-apple-ios",
-      "x86_64-fuchsia",
-      "x86_64-linux-android",
-      "x86_64-pc-windows-msvc",
-      "x86_64-unknown-freebsd"
     ],
     "cfg(not(any(windows, target_os = \"hermit\", target_os = \"unknown\")))": [
       "aarch64-apple-darwin",
