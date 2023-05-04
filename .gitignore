@@ -4,3 +4,4 @@ bazel-*
 .bazelbsp/
 target/
 rust-project.json
+rust-targets.json
