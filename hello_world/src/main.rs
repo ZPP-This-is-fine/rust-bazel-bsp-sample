@@ -16,12 +16,12 @@ struct TestClapArgs {
     value_parser = clap::builder::PossibleValuesParser::new(["42", "21", "37"])
     .map(|s| s.parse::<i32>().unwrap()),
     )]
-    indeks: i32,
+    index: i32,
 }
 
 fn main() {
     let args = TestClapArgs::parse();
-    println!("Your indeks args: {}", args.indeks);
+    println!("Your index args: {}", args.index);
 
     hello_lib::Greeter::x();
     let hello = hello_lib::Greeter::new("Hello");
